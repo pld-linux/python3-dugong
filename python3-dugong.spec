@@ -10,7 +10,7 @@ Version:	3.0
 Release:	1
 License:	PSF
 Group:		Libraries/Python
-Source0:	https://pypi.python.org/packages/source/d/dugong/dugong-%{version}.tar.bz2#md5=f81bc01e7656ced466e1eb059952c21f
+Source0:	https://pypi.python.org/packages/source/d/dugong/dugong-%{version}.tar.bz2
 # Source0-md5:	f81bc01e7656ced466e1eb059952c21f
 URL:		https://bitbucket.org/nikratio/python-dugong
 BuildRequires:	python3-devel
