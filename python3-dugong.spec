@@ -6,12 +6,12 @@
 Summary:	A HTTP 1.1 client module
 # Name must match the python module/package name (as in 'import' statement)
 Name:		python3-%{module}
-Version:	3.0
+Version:	3.3
 Release:	1
 License:	PSF
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/d/dugong/dugong-%{version}.tar.bz2
-# Source0-md5:	f81bc01e7656ced466e1eb059952c21f
+# Source0-md5:	df2766c0b4a996557d3c9bb124382d0c
 URL:		https://bitbucket.org/nikratio/python-dugong
 BuildRequires:	python3-devel
 BuildRequires:	python3-distribute
