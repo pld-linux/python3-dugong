@@ -37,10 +37,7 @@ Dokumentacja API %{module}.
 %setup -q -n %{module}-%{version}
 
 %build
-# CC/CFLAGS is only for arch packages - remove on noarch packages
-CC="%{__cc}" \
-CFLAGS="%{rpmcflags}" \
-%{__python3} setup.py build --build-base build-3 %{?with_tests:test}
+%py3_build %{?with_tests:test}
 
 %if %{with doc}
 cd docs
@@ -51,11 +48,7 @@ rm -rf _build/html/_sources
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__python3} setup.py \
-	build --build-base build-3 \
-	install --skip-build \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py3_install
 
 # in case there are examples provided
 install -d $RPM_BUILD_ROOT%{_examplesdir}/python3-%{module}-%{version}
