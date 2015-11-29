@@ -13,6 +13,7 @@ Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/d/dugong/dugong-%{version}.tar.bz2
 # Source0-md5:	df2766c0b4a996557d3c9bb124382d0c
 URL:		https://bitbucket.org/nikratio/python-dugong
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python3-devel
 BuildRequires:	python3-distribute
 BuildRequires:	python3-modules
