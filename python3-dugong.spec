@@ -2,16 +2,16 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 
-%define 	module	dugong
+%define		module	dugong
 Summary:	A HTTP 1.1 client module
 # Name must match the python module/package name (as in 'import' statement)
 Name:		python3-%{module}
-Version:	3.3
-Release:	7
+Version:	3.7.3
+Release:	1
 License:	PSF
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/d/dugong/dugong-%{version}.tar.bz2
-# Source0-md5:	df2766c0b4a996557d3c9bb124382d0c
+# Source0-md5:	7e1b12a36da16bd3502858893e9555be
 URL:		https://bitbucket.org/nikratio/python-dugong
 BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python3-devel
