@@ -18,6 +18,7 @@ BuildRequires:	python3-devel
 BuildRequires:	python3-distribute
 BuildRequires:	python3-modules
 BuildRequires:	rpm-pythonprov
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -36,6 +37,11 @@ Dokumentacja API %{module}.
 
 %prep
 %setup -q -n %{module}-%{version}
+
+%{__sed} -E -i -e '1s,#!\s*/usr/bin/env\s+python3(\s|$),#!%{__python3}\1,' \
+      examples/extract_links.py \
+      examples/httpcat.py \
+      examples/pipeline1.py
 
 %build
 %py3_build %{?with_tests:test}
