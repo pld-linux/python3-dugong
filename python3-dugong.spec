@@ -7,7 +7,7 @@ Summary:	A HTTP 1.1 client module
 # Name must match the python module/package name (as in 'import' statement)
 Name:		python3-%{module}
 Version:	3.7.3
-Release:	5
+Release:	6
 License:	PSF
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/d/dugong/dugong-%{version}.tar.bz2
